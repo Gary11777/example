@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Page</title>
+    <title>Home Page</title>
 </head>
 <body>
-<h1>Hello from the Contact Page.</h1>
+    @include('Components.nav-link')
+    {{ $slot }}
+</body>
 </html>
