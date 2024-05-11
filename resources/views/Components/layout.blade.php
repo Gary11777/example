@@ -2,9 +2,9 @@
 <html lang="en" class="h-full bg-gray-100">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-{{--    <link href="../../css/app.css" rel="stylesheet">--}}
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/app.css" rel="stylesheet">
+{{--    <script src="https://cdn.tailwindcss.com"></script>--}}
     <title>Home Page</title>
 </head>
 <body class="h-full">
@@ -78,7 +78,7 @@
                             <img class="h-10 w-10 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg" alt="">
                         </div>
                         <div class="ml-3">
-                            <div class="text-base font-medium leading-none text-white">Lary Robot</div>
+                            <div class="text-base font-medium leading-none text-white">Larry Robot</div>
                             <div class="text-sm font-medium leading-none text-gray-400">example@example.com</div>
                         </div>
                         <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
