@@ -26,7 +26,7 @@
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-4 flex items-center md:ml-6">
-                            <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                            {{--<button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                 <span class="absolute -inset-1.5"></span>
                                 <span class="sr-only">View notifications</span>
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -43,7 +43,14 @@
                                         <img class="h-8 w-8 rounded-full" src="https://laracasts.com/images/lary-ai-face.svg" alt="">
                                     </button>
                                 </div>
-                            </div>
+                            </div>--}}
+                            @guest
+                                <x-nav-link href="/login" :active="request()
+                                ->is('login')">Log
+                                    In</x-nav-link>
+                                <x-nav-link href="/register" :active="request()
+                                ->is('register')">Register</x-nav-link>
+                            @endguest
                         </div>
                     </div>
                     <div class="-mr-2 flex md:hidden">
